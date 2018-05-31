@@ -1,0 +1,1352 @@
+<html>
+<head>
+<title>TestNG:  Other testing1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Other testing1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/81</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 14 22:24:12 GMT+04:00 2018</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10066 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.login()'><b>login</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br/>
+<a href="#Output-929697158" onClick='toggleBox("Output-929697158", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-929697158" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-929697158">
+2018-05-14 22:24:12 INFO  BaseTest:42 - login
+<br>
+<br/>
+2018-05-14 22:24:12 INFO  WebDriverLogger:18 - WebDriver find by element - By.id: inputEmail
+<br>
+<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;inputEmail&quot;}
+  (Session info: chrome=66.0.3359.170)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;EPRUSARW1003&apos;, ip: &apos;10.11.14.128&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\MARIIA~1\AppData\Local\Temp\scoped_dir6140_20148}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.170, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ed8bc33d8c746419d45bde60864bc984
+*** Element info: {Using=id, value=inputEmail}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.clear(Unknown Source)
+	at ui.LoginPage.login(LoginPage.java:31)
+	at x_Login(BaseTest.java:43)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace929697158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace929697158'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;inputEmail&quot;}
+  (Session info: chrome=66.0.3359.170)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;EPRUSARW1003&apos;, ip: &apos;10.11.14.128&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\MARIIA~1\AppData\Local\Temp\scoped_dir6140_20148}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.170, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ed8bc33d8c746419d45bde60864bc984
+*** Element info: {Using=id, value=inputEmail}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.clear(Unknown Source)
+	at ui.LoginPage.login(LoginPage.java:31)
+	at x_Login(BaseTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.login()'><b>login</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.login()'><b>login</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.login()'><b>login</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.login()'><b>login</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.educationPageTests.EducationTest@370736d9</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.educationPageTests.EducationTest@370736d9</td></tr>
+<tr>
+<td title='tests.informationPageTests.InformationTest.login()'><b>login</b><br>Test class: tests.informationPageTests.InformationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.informationPageTests.InformationTest@63753b6d</td></tr>
+<tr>
+<td title='tests.informationPageTests.InformationTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.informationPageTests.InformationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.informationPageTests.InformationTest@63753b6d</td></tr>
+<tr>
+<td title='tests.LoginTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@6b09bb57</td></tr>
+<tr>
+<td title='x_Login()'><b>login</b><br>Test class: tests.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@6b09bb57</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.login()'><b>login</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.messagePageTests.MessageTest.login()'><b>login</b><br>Test class: tests.messagePageTests.MessageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.messagePageTests.MessageTest@520a3426</td></tr>
+<tr>
+<td title='tests.messagePageTests.MessageTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.messagePageTests.MessageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.messagePageTests.MessageTest@520a3426</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.login()'><b>login</b><br>Test class: tests.mainPageTests.NewsTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@18eed359</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.NewsTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@18eed359</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.login()'><b>login</b><br>Test class: tests.mainPageTests.NoteTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NoteTest@3e9b1010</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.NoteTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NoteTest@3e9b1010</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='x_Login()'><b>login</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.login()'><b>login</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.login()'><b>login</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.login()'><b>login</b><br>Test class: tests.supportPageTests.SupportTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.supportPageTests.SupportTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.NewsTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@18eed359</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.NewsTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@18eed359</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.NewsTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@18eed359</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.NoteTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NoteTest@3e9b1010</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.NoteTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NoteTest@3e9b1010</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.NoteTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NoteTest@3e9b1010</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.openRecoveryPassword()'><b>openRecoveryPassword</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.openRecoveryPassword()'><b>openRecoveryPassword</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.openRecoveryPassword()'><b>openRecoveryPassword</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.openRecoveryPassword()'><b>openRecoveryPassword</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openPortfolio()'><b>openPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.safeEditingPortfolio()'><b>safeEditingPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.safeEditingPortfolio()'><b>safeEditingPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.safeEditingPortfolio()'><b>safeEditingPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.safeEditingPortfolio()'><b>safeEditingPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.safeEditingPortfolio()'><b>safeEditingPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.openLoginPage()'><b>openLoginPage</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.openLoginPage()'><b>openLoginPage</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.openLoginPage()'><b>openLoginPage</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.openLoginPage()'><b>openLoginPage</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.educationPageTests.EducationTest@370736d9</td></tr>
+<tr>
+<td title='tests.informationPageTests.InformationTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.informationPageTests.InformationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.informationPageTests.InformationTest@63753b6d</td></tr>
+<tr>
+<td title='tests.LoginTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@6b09bb57</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.messagePageTests.MessageTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.messagePageTests.MessageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.messagePageTests.MessageTest@520a3426</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.NewsTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@18eed359</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.NoteTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NoteTest@3e9b1010</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.supportPageTests.SupportTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.messagePageTests.MessageTest.addDialogueWithStudent()'><b>addDialogueWithStudent</b><br>Test class: tests.messagePageTests.MessageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.messagePageTests.MessageTest@520a3426</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.addNote()'><b>addNote</b><br>Test class: tests.mainPageTests.NoteTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NoteTest@3e9b1010</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.addNoteWithInvalidText()'><b>addNoteWithInvalidText</b><br>Test class: tests.mainPageTests.NoteTest ()<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NoteTest@3e9b1010</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.addNoteWithInvalidText()'><b>addNoteWithInvalidText</b><br>Test class: tests.mainPageTests.NoteTest ()<br>Parameters: %#$%@%@#@#^^$</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NoteTest@3e9b1010</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.askQuestion()'><b>askQuestion</b><br>Test class: tests.supportPageTests.SupportTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.askQuestionWithFile()'><b>askQuestionWithFile</b><br>Test class: tests.supportPageTests.SupportTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.askQuestionWithInvalidText()'><b>askQuestionWithInvalidText</b><br>Test class: tests.supportPageTests.SupportTest ()<br>Parameters: , glaza-kot-usy-koska-klyki-usi-azyk.jpg</td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.askQuestionWithInvalidText()'><b>askQuestionWithInvalidText</b><br>Test class: tests.supportPageTests.SupportTest ()<br>Parameters: #$#$%#^@$, glaza-kot-usy-koska-klyki-usi-azyk.jpg</td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.askQuestionWithInvalidText()'><b>askQuestionWithInvalidText</b><br>Test class: tests.supportPageTests.SupportTest ()<br>Parameters: /*SELECT * FROM a*/, glaza-kot-usy-koska-klyki-usi-azyk.jpg</td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.askQuestionWithInvalidText()'><b>askQuestionWithInvalidText</b><br>Test class: tests.supportPageTests.SupportTest ()<br>Parameters: TEST, Xvid-1.3.5-20171208.exe</td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+<tr>
+<td title='tests.supportPageTests.SupportTest.askQuestionWithInvalidText()'><b>askQuestionWithInvalidText</b><br>Test class: tests.supportPageTests.SupportTest ()<br>Parameters: TEST, </td>
+<td></td>
+<td>0</td>
+<td>tests.supportPageTests.SupportTest@335eadca</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthday()'><b>changeBirthday</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 02.12.98</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthday()'><b>changeBirthday</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 05-10-1990</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthday()'><b>changeBirthday</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 12/03/1999</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithEmptyField()'><b>changeBirthdayWithEmptyField</b><br>Test class: tests.mainPageTests.BirthdayTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText()'><b>changeBirthdayWithInvalidText</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: test</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText()'><b>changeBirthdayWithInvalidText</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 05/45/1987</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText()'><b>changeBirthdayWithInvalidText</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 09.12.2030</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText()'><b>changeBirthdayWithInvalidText</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: ^$%#$@</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@6d7b4f4c</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeCity()'><b>changeCity</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: Саратов, 6</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeCity()'><b>changeCity</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: Балаково, 2</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeCity()'><b>changeCity</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: Вольск, 4</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeEmail()'><b>changeEmail</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeEmailWithInvalidText()'><b>changeEmailWithInvalidText</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: , password</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeEmailWithInvalidText()'><b>changeEmailWithInvalidText</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: lukashovama@sgu.ru, password</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeEmailWithInvalidText()'><b>changeEmailWithInvalidText</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: mari-lukashowa@yandex.ru, password1</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeEmailWithInvalidText()'><b>changeEmailWithInvalidText</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: mari-lukashowa@yandex.ru, password</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhone()'><b>changePhone</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: +79031453765</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhone()'><b>changePhone</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: +7(903)145-37-65</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhone()'><b>changePhone</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: 8 903 145 37 65</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhoneWithEmptyField()'><b>changePhoneWithEmptyField</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhoneWithInvalidText()'><b>changePhoneWithInvalidText</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: test</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhoneWithInvalidText()'><b>changePhoneWithInvalidText</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: 234</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhoneWithInvalidText()'><b>changePhoneWithInvalidText</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: ##$#%#</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@185d8b6</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.commentNews()'><b>commentNews</b><br>Test class: tests.mainPageTests.NewsTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@18eed359</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.commentNewsWithInvalidMessage()'><b>commentNewsWithInvalidMessage</b><br>Test class: tests.mainPageTests.NewsTest ()<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@18eed359</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.commentNewsWithInvalidMessage()'><b>commentNewsWithInvalidMessage</b><br>Test class: tests.mainPageTests.NewsTest ()<br>Parameters: %#$%@%@#@#^^$</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@18eed359</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.deleteNote()'><b>deleteNote</b><br>Test class: tests.mainPageTests.NoteTest ()</td>
+<td><div><pre>java.lang.Throwable: Method NoteTest.deleteNote()[pri:0, instance:tests.mainPageTests.NoteTest@3e9b1010] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace749927456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace749927456'><pre>java.lang.Throwable: Method NoteTest.deleteNote()[pri:0, instance:tests.mainPageTests.NoteTest@3e9b1010] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.downloadPortfolio()'><b>downloadPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.informationPageTests.InformationTest.isContactsAndDocumentsBlock()'><b>isContactsAndDocumentsBlock</b><br>Test class: tests.informationPageTests.InformationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.informationPageTests.InformationTest@63753b6d</td></tr>
+<tr>
+<td title='tests.informationPageTests.InformationTest.isGroupmatesListBlock()'><b>isGroupmatesListBlock</b><br>Test class: tests.informationPageTests.InformationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.informationPageTests.InformationTest@63753b6d</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.isInfoBlock()'><b>isInfoBlock</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.isInfoSubject()'><b>isInfoSubject</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.educationPageTests.EducationTest@370736d9</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.isNewsBlock()'><b>isNewsBlock</b><br>Test class: tests.mainPageTests.MainPageTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@6536e911</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.isStatisticPresent()'><b>isStatisticPresent</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td><div><pre>java.lang.Throwable: Method EducationTest.isStatisticPresent()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace169833205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace169833205'><pre>java.lang.Throwable: Method EducationTest.isStatisticPresent()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.isStructurePresent()'><b>isStructurePresent</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td><div><pre>java.lang.Throwable: Method EducationTest.isStructurePresent()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1261198850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1261198850'><pre>java.lang.Throwable: Method EducationTest.isStructurePresent()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.isTablePresent()'><b>isTablePresent</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td><div><pre>java.lang.Throwable: Method EducationTest.isTablePresent()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1470358122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1470358122'><pre>java.lang.Throwable: Method EducationTest.isTablePresent()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.LoginTest.loginFalse_and_PasswordFalse()'><b>loginFalse_and_PasswordFalse</b><br>Test class: tests.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@6b09bb57</td></tr>
+<tr>
+<td title='tests.LoginTest.loginFalse_and_PasswordTrue()'><b>loginFalse_and_PasswordTrue</b><br>Test class: tests.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@6b09bb57</td></tr>
+<tr>
+<td title='tests.LoginTest.loginTrue_and_PasswordFalse()'><b>loginTrue_and_PasswordFalse</b><br>Test class: tests.LoginTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@6b09bb57</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.makeBoldTextOnCommonPortfolio()'><b>makeBoldTextOnCommonPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.makeBoldTextOnCourseWorksPortfolio()'><b>makeBoldTextOnCourseWorksPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.makeBoldTextOnIndividualAchievementsPortfolio()'><b>makeBoldTextOnIndividualAchievementsPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.makeBoldTextOnOtherInfoPortfolio()'><b>makeBoldTextOnOtherInfoPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_BoldTest.makeBoldTextOnPractiksPortfolio()'><b>makeBoldTextOnPractiksPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_BoldTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_BoldTest@527740a2</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.makeItalicTextOnCommonPortfolio()'><b>makeItalicTextOnCommonPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.makeItalicTextOnCourseWorksPortfolio()'><b>makeItalicTextOnCourseWorksPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.makeItalicTextOnIndividualAchievementsPortfolio()'><b>makeItalicTextOnIndividualAchievementsPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.makeItalicTextOnOtherInfoPortfolio()'><b>makeItalicTextOnOtherInfoPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_ItalicTest.makeItalicTextOnPractiksPortfolio()'><b>makeItalicTextOnPractiksPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_ItalicTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_ItalicTest@13a5fe33</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.makeUnderlineItalicTextOnPractiksPortfolio()'><b>makeUnderlineItalicTextOnPractiksPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.makeUnderlineTextOnCommonPortfolio()'><b>makeUnderlineTextOnCommonPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.makeUnderlineTextOnCourseWorksPortfolio()'><b>makeUnderlineTextOnCourseWorksPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.makeUnderlineTextOnIndividualAchievementsPortfolio()'><b>makeUnderlineTextOnIndividualAchievementsPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest.makeUnderlineTextOnOtherInfoPortfolio()'><b>makeUnderlineTextOnOtherInfoPortfolio</b><br>Test class: tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest@3108bc</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openAllPortfolioInViewingMode()'><b>openAllPortfolioInViewingMode</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openCommonPortfolioInViewingMode()'><b>openCommonPortfolioInViewingMode</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openCourseWorksPortfolioInViewingMode()'><b>openCourseWorksPortfolioInViewingMode</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.openDialogueWithTeacher()'><b>openDialogueWithTeacher</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td><div><pre>java.lang.Throwable: Method EducationTest.openDialogueWithTeacher()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace429353573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace429353573'><pre>java.lang.Throwable: Method EducationTest.openDialogueWithTeacher()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.openDocument()'><b>openDocument</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td><div><pre>java.lang.Throwable: Method EducationTest.openDocument()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1975873209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1975873209'><pre>java.lang.Throwable: Method EducationTest.openDocument()[pri:0, instance:tests.educationPageTests.EducationTest@370736d9] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.informationPageTests.InformationTest.openDocument()'><b>openDocument</b><br>Test class: tests.informationPageTests.InformationTest ()</td>
+<td><div><pre>java.lang.Throwable: Method InformationTest.openDocument()[pri:0, instance:tests.informationPageTests.InformationTest@63753b6d] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1457263953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1457263953'><pre>java.lang.Throwable: Method InformationTest.openDocument()[pri:0, instance:tests.informationPageTests.InformationTest@63753b6d] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openIndividualAchievementsPortfolioInViewingMode()'><b>openIndividualAchievementsPortfolioInViewingMode</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openOtherInfoPortfolioInViewingMode()'><b>openOtherInfoPortfolioInViewingMode</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.mainPageTests.portfolioPageTests.PortfolioTest.openPractiksPortfolioInViewingMode()'><b>openPractiksPortfolioInViewingMode</b><br>Test class: tests.mainPageTests.portfolioPageTests.PortfolioTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.portfolioPageTests.PortfolioTest@67784306</td></tr>
+<tr>
+<td title='tests.educationPageTests.EducationTest.openSubject()'><b>openSubject</b><br>Test class: tests.educationPageTests.EducationTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.educationPageTests.EducationTest@370736d9</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.recoveryPassword()'><b>recoveryPassword</b><br>Test class: tests.PasswordRecoveryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.recoveryPassword_withInvalidEmail()'><b>recoveryPassword_withInvalidEmail</b><br>Test class: tests.PasswordRecoveryTest<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.recoveryPassword_withInvalidEmail()'><b>recoveryPassword_withInvalidEmail</b><br>Test class: tests.PasswordRecoveryTest<br>Parameters: mari12345678@yandex.ru</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.PasswordRecoveryTest.recoveryPassword_withInvalidEmail()'><b>recoveryPassword_withInvalidEmail</b><br>Test class: tests.PasswordRecoveryTest<br>Parameters: %$$@.test</td>
+<td></td>
+<td>0</td>
+<td>tests.PasswordRecoveryTest@6f1fba17</td></tr>
+<tr>
+<td title='tests.messagePageTests.MessageTest.sentMessage()'><b>sentMessage</b><br>Test class: tests.messagePageTests.MessageTest ()</td>
+<td><div><pre>java.lang.Throwable: Method MessageTest.sentMessage()[pri:0, instance:tests.messagePageTests.MessageTest@520a3426] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1928301845", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1928301845'><pre>java.lang.Throwable: Method MessageTest.sentMessage()[pri:0, instance:tests.messagePageTests.MessageTest@520a3426] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.messagePageTests.MessageTest.sentMessageWithInvalidText()'><b>sentMessageWithInvalidText</b><br>Test class: tests.messagePageTests.MessageTest ()</td>
+<td><div><pre>java.lang.Throwable: Method MessageTest.sentMessageWithInvalidText(java.lang.String)[pri:0, instance:tests.messagePageTests.MessageTest@520a3426] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1789452565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1789452565'><pre>java.lang.Throwable: Method MessageTest.sentMessageWithInvalidText(java.lang.String)[pri:0, instance:tests.messagePageTests.MessageTest@520a3426] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

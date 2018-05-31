@@ -1,0 +1,1256 @@
+<html>
+<head>
+<title>TestNG:  Main page testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Main page testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/10/12</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 31 13:30:23 GMT+04:00 2018</td>
+</tr>
+<tr><td>Total time:</td><td>374 seconds (374088 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.NewsTest ()<br/>
+<a href="#Output-684495345" onClick='toggleBox("Output-684495345", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-684495345" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-684495345">
+2018-05-31 13:35:51 INFO  BaseTest:48 - closeAuthorizationOut
+<br/>
+2018-05-31 13:36:33 WARN  LoginPage:64 - isLoginPage false
+<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for ui.CommonPage$$Lambda$110/673969048@4f690ee9 (tried for 30 second(s) with 1 MILLISECONDS interval)
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;EPRUSARW1003&apos;, ip: &apos;10.11.14.128&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at ui.CommonPage.logout(CommonPage.java:102)
+	at tests.BaseTest.authorizationOut(BaseTest.java:49)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace684495345", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace684495345'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for ui.CommonPage$$Lambda$110/673969048@4f690ee9 (tried for 30 second(s) with 1 MILLISECONDS interval)
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;EPRUSARW1003&apos;, ip: &apos;10.11.14.128&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at ui.CommonPage.logout(CommonPage.java:102)
+	at tests.BaseTest.authorizationOut(BaseTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:232)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:115)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>tests.mainPageTests.NewsTest@4e84fac2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.x_Login()'><b>x_Login</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.startWebSite()'><b>startWebSite</b><br>Test class: tests.mainPageTests.ImageBlockTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.x_Login()'><b>x_Login</b><br>Test class: tests.mainPageTests.ImageBlockTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.ImageBlockTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.ImageBlockTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.ImageBlockTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.openMainPage()'><b>openMainPage</b><br>Test class: tests.mainPageTests.ImageBlockTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.authorizationOut()'><b>authorizationOut</b><br>Test class: tests.mainPageTests.ImageBlockTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.addNoteWithInvalidText()'><b>addNoteWithInvalidText</b><br>Test class: tests.mainPageTests.NoteTest ()<br>Parameters: <br/>
+<a href="#Output-1736640371" onClick='toggleBox("Output-1736640371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1736640371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1736640371">
+2018-05-31 13:33:19 INFO  NewsTest:36 - TC_CPT_1.4.1/TC_CPT_1.4.3 addNoteWithInvalidText
+<br/>
+2018-05-31 13:33:19 INFO  CommonPage:131 - countNote
+<br/>
+2018-05-31 13:33:20 INFO  CommonPage:116 - addNote 
+<br/>
+2018-05-31 13:33:50 WARN  CommonPage:152 - isNotePresent false
+<br/>
+2018-05-31 13:33:50 INFO  CommonPage:131 - countNote
+<br/>
+2018-05-31 13:33:50 INFO  Screenshot:43 - <a href='screenshots/screenshot6447845555397767040.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The note with invalid text added in list expected [true] but found [false]
+	at tests.mainPageTests.NoteTest.addNoteWithInvalidText(NoteTest.java:40)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1736640371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1736640371'><pre>java.lang.AssertionError: The note with invalid text added in list expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at tests.mainPageTests.NoteTest.addNoteWithInvalidText(NoteTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>31</td>
+<td>tests.mainPageTests.NoteTest@709d8350</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.addNoteWithInvalidText()'><b>addNoteWithInvalidText</b><br>Test class: tests.mainPageTests.NoteTest ()<br>Parameters: %#$%@%@#@#^^$<br/>
+<a href="#Output-1756304884" onClick='toggleBox("Output-1756304884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1756304884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1756304884">
+2018-05-31 13:33:52 INFO  NewsTest:36 - TC_CPT_1.4.1/TC_CPT_1.4.3 addNoteWithInvalidText
+<br/>
+2018-05-31 13:33:52 INFO  CommonPage:131 - countNote
+<br/>
+2018-05-31 13:33:53 INFO  CommonPage:116 - addNote %#$%@%@#@#^^$
+<br/>
+2018-05-31 13:33:53 WARN  CommonPage:149 - isNotePresent true
+<br/>
+2018-05-31 13:33:53 INFO  Screenshot:43 - <a href='screenshots/screenshot7415290207607981214.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The note with invalid text added in list expected [true] but found [false]
+	at tests.mainPageTests.NoteTest.addNoteWithInvalidText(NoteTest.java:40)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1756304884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1756304884'><pre>java.lang.AssertionError: The note with invalid text added in list expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at tests.mainPageTests.NoteTest.addNoteWithInvalidText(NoteTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>1</td>
+<td>tests.mainPageTests.NoteTest@709d8350</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText()'><b>changeBirthdayWithInvalidText</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: test<br/>
+<a href="#Output-1035711355" onClick='toggleBox("Output-1035711355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1035711355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1035711355">
+2018-05-31 13:32:34 INFO  BirthdayTest:42 - TC_CPT_1.7.2/TC_CPT_1.7.3 changeBirthdayWithInvalidText
+<br/>
+2018-05-31 13:32:34 INFO  MainPage:135 - changeBirthday test
+<br/>
+2018-05-31 13:32:35 WARN  MainPage:147 - isBirthdayPresent test true
+<br/>
+2018-05-31 13:32:35 INFO  Screenshot:43 - <a href='screenshots/screenshot8964402638670134471.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Invalid text safe as birthdays!! expected [false] but found [true]
+	at tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText(BirthdayTest.java:45)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1035711355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1035711355'><pre>java.lang.AssertionError: Invalid text safe as birthdays!! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText(BirthdayTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@7c262fbd</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText()'><b>changeBirthdayWithInvalidText</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 05/45/1987<br/>
+<a href="#Output-1958264355" onClick='toggleBox("Output-1958264355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1958264355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1958264355">
+2018-05-31 13:32:37 INFO  BirthdayTest:42 - TC_CPT_1.7.2/TC_CPT_1.7.3 changeBirthdayWithInvalidText
+<br/>
+2018-05-31 13:32:37 INFO  MainPage:135 - changeBirthday 05/45/1987
+<br/>
+2018-05-31 13:33:07 WARN  MainPage:147 - isBirthdayPresent 05/45/1987 true
+<br/>
+2018-05-31 13:33:08 INFO  Screenshot:43 - <a href='screenshots/screenshot879145814483624930.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Invalid text safe as birthdays!! expected [false] but found [true]
+	at tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText(BirthdayTest.java:45)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1958264355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1958264355'><pre>java.lang.AssertionError: Invalid text safe as birthdays!! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText(BirthdayTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>30</td>
+<td>tests.mainPageTests.BirthdayTest@7c262fbd</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText()'><b>changeBirthdayWithInvalidText</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 09.12.2030<br/>
+<a href="#Output-1276753923" onClick='toggleBox("Output-1276753923", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1276753923" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1276753923">
+2018-05-31 13:33:09 INFO  BirthdayTest:42 - TC_CPT_1.7.2/TC_CPT_1.7.3 changeBirthdayWithInvalidText
+<br/>
+2018-05-31 13:33:09 INFO  MainPage:135 - changeBirthday 09.12.2030
+<br/>
+2018-05-31 13:33:09 WARN  MainPage:147 - isBirthdayPresent 09.12.2030 true
+<br/>
+2018-05-31 13:33:10 INFO  Screenshot:43 - <a href='screenshots/screenshot618799935730592340.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Invalid text safe as birthdays!! expected [false] but found [true]
+	at tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText(BirthdayTest.java:45)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1276753923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1276753923'><pre>java.lang.AssertionError: Invalid text safe as birthdays!! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText(BirthdayTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@7c262fbd</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText()'><b>changeBirthdayWithInvalidText</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: ^$%#$@<br/>
+<a href="#Output-1460828108" onClick='toggleBox("Output-1460828108", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1460828108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1460828108">
+2018-05-31 13:33:11 INFO  BirthdayTest:42 - TC_CPT_1.7.2/TC_CPT_1.7.3 changeBirthdayWithInvalidText
+<br/>
+2018-05-31 13:33:11 INFO  MainPage:135 - changeBirthday ^$%#$@
+<br/>
+2018-05-31 13:33:11 WARN  MainPage:147 - isBirthdayPresent ^$%#$@ true
+<br/>
+2018-05-31 13:33:12 INFO  Screenshot:43 - <a href='screenshots/screenshot6048602438282432647.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Invalid text safe as birthdays!! expected [false] but found [true]
+	at tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText(BirthdayTest.java:45)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1460828108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1460828108'><pre>java.lang.AssertionError: Invalid text safe as birthdays!! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at tests.mainPageTests.BirthdayTest.changeBirthdayWithInvalidText(BirthdayTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>tests.mainPageTests.BirthdayTest@7c262fbd</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeEmailWithInvalidText()'><b>changeEmailWithInvalidText</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: mari-lukashowa@yandex.ru, password<br/>
+<a href="#Output-1819332047" onClick='toggleBox("Output-1819332047", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1819332047" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1819332047">
+2018-05-31 13:34:48 INFO  MainPageTest:64 - TC_CPT_1.6.2./TC_CPT_1.6.3./TC_CPT_1.6.4. changeEmailWithInvalidText
+<br/>
+2018-05-31 13:34:48 INFO  MainPage:194 - openChangeEmailPage
+<br/>
+2018-05-31 13:34:48 WARN  ChangeEmailPage:69 - isChangeEmailPage true
+<br/>
+2018-05-31 13:34:49 INFO  ChangeEmailPage:31 - setEmail mari-lukashowa@yandex.ru
+<br/>
+2018-05-31 13:34:49 INFO  ChangeEmailPage:38 - setCurrentPassword password
+<br/>
+2018-05-31 13:34:49 INFO  ChangeEmailPage:43 - clickBtnSafe
+<br/>
+2018-05-31 13:35:00 WARN  ChangeEmailPage:59 - isErrorPresent false
+<br/>
+2018-05-31 13:35:01 INFO  Screenshot:43 - <a href='screenshots/screenshot4882537979059622786.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Message error isn&apos;t displayed expected [true] but found [false]
+	at tests.mainPageTests.MainPageTest.changeEmailWithInvalidText(MainPageTest.java:70)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1819332047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1819332047'><pre>java.lang.AssertionError: Message error isn&apos;t displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at tests.mainPageTests.MainPageTest.changeEmailWithInvalidText(MainPageTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>12</td>
+<td>tests.mainPageTests.MainPageTest@39266ca</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.commentNewsWithInvalidMessage()'><b>commentNewsWithInvalidMessage</b><br>Test class: tests.mainPageTests.NewsTest ()<br>Parameters: <br/>
+<a href="#Output-691790580" onClick='toggleBox("Output-691790580", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-691790580" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-691790580">
+2018-05-31 13:35:12 INFO  NewsTest:36 - TC_CPT_1.3.1/TC_CPT_1.3.3 commentNewsWithInvalidMessage
+<br/>
+2018-05-31 13:35:12 INFO  MainPage:187 - openNews
+<br/>
+2018-05-31 13:35:15 WARN  NewsPage:53 - isNewsPage true
+<br/>
+2018-05-31 13:35:15 INFO  NewsPage:23 - countItemMessage
+<br/>
+2018-05-31 13:35:15 INFO  NewsPage:29 - sentMessange: 
+<br/>
+2018-05-31 13:35:45 WARN  NewsPage:45 - isMessangePresent  false
+<br/>
+2018-05-31 13:35:45 INFO  NewsPage:23 - countItemMessage
+<br/>
+2018-05-31 13:35:46 INFO  Screenshot:43 - <a href='screenshots/screenshot8064831403174323520.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Message with invalid text sent! Karl!! expected [true] but found [false]
+	at tests.mainPageTests.NewsTest.commentNewsWithInvalidMessage(NewsTest.java:41)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace691790580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace691790580'><pre>java.lang.AssertionError: Message with invalid text sent! Karl!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at tests.mainPageTests.NewsTest.commentNewsWithInvalidMessage(NewsTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>33</td>
+<td>tests.mainPageTests.NewsTest@4e84fac2</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.commentNewsWithInvalidMessage()'><b>commentNewsWithInvalidMessage</b><br>Test class: tests.mainPageTests.NewsTest ()<br>Parameters: %#$%@%@#@#^^$<br/>
+<a href="#Output-1734548916" onClick='toggleBox("Output-1734548916", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1734548916" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1734548916">
+2018-05-31 13:35:47 INFO  NewsTest:36 - TC_CPT_1.3.1/TC_CPT_1.3.3 commentNewsWithInvalidMessage
+<br/>
+2018-05-31 13:35:47 INFO  MainPage:187 - openNews
+<br/>
+2018-05-31 13:35:50 WARN  NewsPage:53 - isNewsPage true
+<br/>
+2018-05-31 13:35:50 INFO  NewsPage:23 - countItemMessage
+<br/>
+2018-05-31 13:35:50 INFO  NewsPage:29 - sentMessange: %#$%@%@#@#^^$
+<br/>
+2018-05-31 13:35:51 WARN  NewsPage:42 - isMessangePresent %#$%@%@#@#^^$ true
+<br/>
+2018-05-31 13:35:51 INFO  Screenshot:43 - <a href='screenshots/screenshot8673878480107390430.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Message with invalid text sent! Karl!! expected [true] but found [false]
+	at tests.mainPageTests.NewsTest.commentNewsWithInvalidMessage(NewsTest.java:41)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1734548916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1734548916'><pre>java.lang.AssertionError: Message with invalid text sent! Karl!! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at tests.mainPageTests.NewsTest.commentNewsWithInvalidMessage(NewsTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>3</td>
+<td>tests.mainPageTests.NewsTest@4e84fac2</td></tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.deleteNote()'><b>deleteNote</b><br>Test class: tests.mainPageTests.NoteTest ()<br/>
+<a href="#Output-520531846" onClick='toggleBox("Output-520531846", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-520531846" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-520531846">
+2018-05-31 13:33:54 INFO  NewsTest:47 - TC_CPT_1.4.4 deleteNote
+<br/>
+2018-05-31 13:33:54 INFO  CommonPage:131 - countNote
+<br/>
+2018-05-31 13:33:56 INFO  CommonPage:127 - deleteNote HELLO it is auto TEST
+<br/>
+2018-05-31 13:33:56 WARN  CommonPage:149 - isNotePresent true
+<br/>
+2018-05-31 13:33:56 INFO  Screenshot:43 - <a href='screenshots/screenshot4365592407129914440.png'>AutoScreen</a>
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The note on main page didn&apos;t delete from list expected [true] but found [false]
+	at tests.mainPageTests.NoteTest.deleteNote(NoteTest.java:51)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace520531846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace520531846'><pre>java.lang.AssertionError: The note on main page didn&apos;t delete from list expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at tests.mainPageTests.NoteTest.deleteNote(NoteTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>1</td>
+<td>tests.mainPageTests.NoteTest@709d8350</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.mainPageTests.NoteTest.addNote()'><b>addNote</b><br>Test class: tests.mainPageTests.NoteTest ()<br/>
+<a href="#Output-204043086" onClick='toggleBox("Output-204043086", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-204043086" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-204043086">
+2018-05-31 13:33:16 INFO  NewsTest:25 - TC_CPT_1.4.2 addNote
+<br/>
+2018-05-31 13:33:16 INFO  CommonPage:131 - countNote
+<br/>
+2018-05-31 13:33:17 INFO  CommonPage:116 - addNote HELLO it is auto TEST
+<br/>
+2018-05-31 13:33:18 WARN  CommonPage:149 - isNotePresent true
+<br/>
+2018-05-31 13:33:18 INFO  CommonPage:131 - countNote
+<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.mainPageTests.NoteTest@709d8350</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthday()'><b>changeBirthday</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 02.12.98<br/>
+<a href="#Output-1510964043" onClick='toggleBox("Output-1510964043", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1510964043" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1510964043">
+2018-05-31 13:30:27 INFO  BirthdayTest:24 - TC_CPT_1.7.1 changeBirthday
+<br/>
+2018-05-31 13:30:27 INFO  MainPage:135 - changeBirthday 02.12.98
+<br/>
+2018-05-31 13:30:58 WARN  MainPage:147 - isBirthdayPresent 02.12.98 true
+<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>tests.mainPageTests.BirthdayTest@7c262fbd</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthday()'><b>changeBirthday</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 05-10-1990<br/>
+<a href="#Output-1431539638" onClick='toggleBox("Output-1431539638", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1431539638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1431539638">
+2018-05-31 13:30:59 INFO  BirthdayTest:24 - TC_CPT_1.7.1 changeBirthday
+<br/>
+2018-05-31 13:30:59 INFO  MainPage:135 - changeBirthday 05-10-1990
+<br/>
+2018-05-31 13:31:30 WARN  MainPage:147 - isBirthdayPresent 05-10-1990 true
+<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>tests.mainPageTests.BirthdayTest@7c262fbd</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthday()'><b>changeBirthday</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br>Parameters: 12/03/1999<br/>
+<a href="#Output-1916759868" onClick='toggleBox("Output-1916759868", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1916759868" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1916759868">
+2018-05-31 13:31:31 INFO  BirthdayTest:24 - TC_CPT_1.7.1 changeBirthday
+<br/>
+2018-05-31 13:31:31 INFO  MainPage:135 - changeBirthday 12/03/1999
+<br/>
+2018-05-31 13:32:01 WARN  MainPage:147 - isBirthdayPresent 12/03/1999 true
+<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>tests.mainPageTests.BirthdayTest@7c262fbd</td></tr>
+<tr>
+<td title='tests.mainPageTests.BirthdayTest.changeBirthdayWithEmptyField()'><b>changeBirthdayWithEmptyField</b><br>Test class: tests.mainPageTests.BirthdayTest ()<br/>
+<a href="#Output-936413375" onClick='toggleBox("Output-936413375", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-936413375" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-936413375">
+2018-05-31 13:32:02 INFO  BirthdayTest:33 - TC_CPT_1.7.1 changeBirthday
+<br/>
+2018-05-31 13:32:02 INFO  MainPage:135 - changeBirthday 
+<br/>
+2018-05-31 13:32:33 WARN  MainPage:147 - isBirthdayPresent Пусто true
+<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>tests.mainPageTests.BirthdayTest@7c262fbd</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeCity()'><b>changeCity</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: Саратов, 6<br/>
+<a href="#Output-1846210940" onClick='toggleBox("Output-1846210940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1846210940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1846210940">
+2018-05-31 13:34:01 INFO  MainPageTest:42 - TC_CPT_1.5. changeCity
+<br/>
+2018-05-31 13:34:02 INFO  MainPage:118 - changeCity 6
+<br/>
+2018-05-31 13:34:32 WARN  MainPage:125 - isCityPresent Саратов true
+<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>tests.mainPageTests.MainPageTest@39266ca</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeCity()'><b>changeCity</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: Балаково, 2<br/>
+<a href="#Output-621087467" onClick='toggleBox("Output-621087467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-621087467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-621087467">
+2018-05-31 13:34:33 INFO  MainPageTest:42 - TC_CPT_1.5. changeCity
+<br/>
+2018-05-31 13:34:34 INFO  MainPage:118 - changeCity 2
+<br/>
+2018-05-31 13:34:34 WARN  MainPage:125 - isCityPresent Балаково true
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@39266ca</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeCity()'><b>changeCity</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: Вольск, 4<br/>
+<a href="#Output-2110791801" onClick='toggleBox("Output-2110791801", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2110791801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2110791801">
+2018-05-31 13:34:35 INFO  MainPageTest:42 - TC_CPT_1.5. changeCity
+<br/>
+2018-05-31 13:34:36 INFO  MainPage:118 - changeCity 4
+<br/>
+2018-05-31 13:34:36 WARN  MainPage:125 - isCityPresent Вольск true
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@39266ca</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeEmailWithInvalidText()'><b>changeEmailWithInvalidText</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: , password<br/>
+<a href="#Output-932346721" onClick='toggleBox("Output-932346721", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-932346721" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-932346721">
+2018-05-31 13:34:37 INFO  MainPageTest:64 - TC_CPT_1.6.2./TC_CPT_1.6.3./TC_CPT_1.6.4. changeEmailWithInvalidText
+<br/>
+2018-05-31 13:34:37 INFO  MainPage:194 - openChangeEmailPage
+<br/>
+2018-05-31 13:34:38 WARN  ChangeEmailPage:69 - isChangeEmailPage true
+<br/>
+2018-05-31 13:34:38 INFO  ChangeEmailPage:31 - setEmail 
+<br/>
+2018-05-31 13:34:38 INFO  ChangeEmailPage:38 - setCurrentPassword password
+<br/>
+2018-05-31 13:34:38 INFO  ChangeEmailPage:43 - clickBtnSafe
+<br/>
+2018-05-31 13:34:39 WARN  ChangeEmailPage:56 - isErrorPresent true
+<br/>
+2018-05-31 13:34:39 INFO  ChangeEmailPage:49 - clickBtnBack
+<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.mainPageTests.MainPageTest@39266ca</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeEmailWithInvalidText()'><b>changeEmailWithInvalidText</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: lukashovama@sgu.ru, password<br/>
+<a href="#Output-493898142" onClick='toggleBox("Output-493898142", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-493898142" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-493898142">
+2018-05-31 13:34:41 INFO  MainPageTest:64 - TC_CPT_1.6.2./TC_CPT_1.6.3./TC_CPT_1.6.4. changeEmailWithInvalidText
+<br/>
+2018-05-31 13:34:41 INFO  MainPage:194 - openChangeEmailPage
+<br/>
+2018-05-31 13:34:42 WARN  ChangeEmailPage:69 - isChangeEmailPage true
+<br/>
+2018-05-31 13:34:42 INFO  ChangeEmailPage:31 - setEmail lukashovama@sgu.ru
+<br/>
+2018-05-31 13:34:42 INFO  ChangeEmailPage:38 - setCurrentPassword password
+<br/>
+2018-05-31 13:34:42 INFO  ChangeEmailPage:43 - clickBtnSafe
+<br/>
+2018-05-31 13:34:42 WARN  ChangeEmailPage:56 - isErrorPresent true
+<br/>
+2018-05-31 13:34:42 INFO  ChangeEmailPage:49 - clickBtnBack
+<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.mainPageTests.MainPageTest@39266ca</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.changeEmailWithInvalidText()'><b>changeEmailWithInvalidText</b><br>Test class: tests.mainPageTests.MainPageTest ()<br>Parameters: mari-lukashowa@yandex.ru, password1<br/>
+<a href="#Output-1893916949" onClick='toggleBox("Output-1893916949", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1893916949" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1893916949">
+2018-05-31 13:34:45 INFO  MainPageTest:64 - TC_CPT_1.6.2./TC_CPT_1.6.3./TC_CPT_1.6.4. changeEmailWithInvalidText
+<br/>
+2018-05-31 13:34:45 INFO  MainPage:194 - openChangeEmailPage
+<br/>
+2018-05-31 13:34:45 WARN  ChangeEmailPage:69 - isChangeEmailPage true
+<br/>
+2018-05-31 13:34:45 INFO  ChangeEmailPage:31 - setEmail mari-lukashowa@yandex.ru
+<br/>
+2018-05-31 13:34:45 INFO  ChangeEmailPage:38 - setCurrentPassword password1
+<br/>
+2018-05-31 13:34:45 INFO  ChangeEmailPage:43 - clickBtnSafe
+<br/>
+2018-05-31 13:34:46 WARN  ChangeEmailPage:56 - isErrorPresent true
+<br/>
+2018-05-31 13:34:46 INFO  ChangeEmailPage:49 - clickBtnBack
+<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.mainPageTests.MainPageTest@39266ca</td></tr>
+<tr>
+<td title='tests.mainPageTests.NewsTest.commentNews()'><b>commentNews</b><br>Test class: tests.mainPageTests.NewsTest ()<br/>
+<a href="#Output-1376632845" onClick='toggleBox("Output-1376632845", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1376632845" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1376632845">
+2018-05-31 13:35:07 INFO  NewsTest:24 - TC_CPT_1.3.2 commentNews
+<br/>
+2018-05-31 13:35:07 INFO  MainPage:187 - openNews
+<br/>
+2018-05-31 13:35:10 WARN  NewsPage:53 - isNewsPage true
+<br/>
+2018-05-31 13:35:10 INFO  NewsPage:23 - countItemMessage
+<br/>
+2018-05-31 13:35:10 INFO  NewsPage:29 - sentMessange: HELLO it is auto TEST
+<br/>
+2018-05-31 13:35:11 WARN  NewsPage:42 - isMessangePresent HELLO it is auto TEST true
+<br/>
+2018-05-31 13:35:11 INFO  NewsPage:23 - countItemMessage
+<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>tests.mainPageTests.NewsTest@4e84fac2</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.isInfoBlock()'><b>isInfoBlock</b><br>Test class: tests.mainPageTests.MainPageTest ()<br/>
+<a href="#Output-1211899277" onClick='toggleBox("Output-1211899277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1211899277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1211899277">
+2018-05-31 13:35:02 INFO  MainPageTest:25 - TC_2.2 isInfoBlock
+<br/>
+2018-05-31 13:35:02 WARN  MainPage:65 - isInfoBlockPresent true
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@39266ca</td></tr>
+<tr>
+<td title='tests.mainPageTests.MainPageTest.isNewsBlock()'><b>isNewsBlock</b><br>Test class: tests.mainPageTests.MainPageTest ()<br/>
+<a href="#Output-470285564" onClick='toggleBox("Output-470285564", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-470285564" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-470285564">
+2018-05-31 13:35:03 INFO  MainPageTest:33 - TC_CPT_1.2. isNewsBlock
+<br/>
+2018-05-31 13:35:03 WARN  MainPage:75 - isNewsBlockPresent true
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.MainPageTest@39266ca</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest._deleteImage()'><b>_deleteImage</b><br>Test class: tests.mainPageTests.ImageBlockTest ()</td>
+<td><div><pre>java.lang.Throwable: Method ImageBlockTest._deleteImage()[pri:0, instance:tests.mainPageTests.ImageBlockTest@2d1fa9b8] depends on not successfully finished methods
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace527375439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace527375439'><pre>java.lang.Throwable: Method ImageBlockTest._deleteImage()[pri:0, instance:tests.mainPageTests.ImageBlockTest@2d1fa9b8] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at runner.Runner.run(Runner.java:49)
+	at runner.Runner.main(Runner.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.addImage()'><b>addImage</b><br>Test class: tests.mainPageTests.ImageBlockTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.addImageWithInvalidFile()'><b>addImageWithInvalidFile</b><br>Test class: tests.mainPageTests.ImageBlockTest ()<br>Parameters: Sky.jpg</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.addImageWithInvalidFile()'><b>addImageWithInvalidFile</b><br>Test class: tests.mainPageTests.ImageBlockTest ()<br>Parameters: archive.7z</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.ImageBlockTest.addImageWithInvalidFile()'><b>addImageWithInvalidFile</b><br>Test class: tests.mainPageTests.ImageBlockTest ()<br>Parameters: Xvid-1.3.5-20171208.exe</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.ImageBlockTest@2d1fa9b8</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhone()'><b>changePhone</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: +79031453765</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhone()'><b>changePhone</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: +7(903)145-37-65</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhone()'><b>changePhone</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: 8 903 145 37 65</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhoneWithEmptyField()'><b>changePhoneWithEmptyField</b><br>Test class: tests.mainPageTests.PhoneTest ()</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhoneWithInvalidText()'><b>changePhoneWithInvalidText</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: test</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhoneWithInvalidText()'><b>changePhoneWithInvalidText</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: 234</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+<tr>
+<td title='tests.mainPageTests.PhoneTest.changePhoneWithInvalidText()'><b>changePhoneWithInvalidText</b><br>Test class: tests.mainPageTests.PhoneTest ()<br>Parameters: ##$#%#</td>
+<td></td>
+<td>0</td>
+<td>tests.mainPageTests.PhoneTest@521f7741</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Testing IpsilonUni">
+    <test name="Other testing">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.PasswordRecoveryTest"/>
+        </classes>
+    </test>
+    <test name="Support page testing">
+        <classes>
+            <class name="tests.supportPageTests.SupportTest"/>
+        </classes>
+    </test>
+    <test name="Message page testing">
+        <classes>
+            <class name="tests.messagePageTests.MessageTest"/>
+        </classes>
+    </test>
+    <test name="Portfolio page testing">
+        <classes>
+            <class name="tests.mainPageTests.portfolioPageTests.PortfolioTest"/>
+            <class name="tests.mainPageTests.portfolioPageTests.EditText_BoldTest"/>
+            <class name="tests.mainPageTests.portfolioPageTests.EditText_ItalicTest"/>
+            <class name="tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest"/>
+            <class name="tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest"/>
+        </classes>
+    </test>
+    <test name="Information page testing">
+        <classes>
+            <class name="tests.informationPageTests.InformationTest"/>
+        </classes>
+    </test>
+    <test name="Education page testing">
+        <classes>
+            <class name="tests.educationPageTests.EducationTest"/>
+        </classes>
+    </test>
+    <test name="Main page testing">
+        <classes>
+            <class name="tests.mainPageTests.BirthdayTest"/>
+            <class name="tests.mainPageTests.NoteTest"/>
+            <class name="tests.mainPageTests.MainPageTest"/>
+            <class name="tests.mainPageTests.NewsTest"/>
+            <class name="tests.mainPageTests.PhoneTest"/>
+            <class name="tests.mainPageTests.ImageBlockTest"/>
+        </classes>
+    </test>
+</suite>

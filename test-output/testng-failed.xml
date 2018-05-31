@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing IpsilonUni]">
+  <test name="Other testing">
+    <classes>
+      <class name="tests.LoginTest"/>
+      <class name="tests.PasswordRecoveryTest"/>
+    </classes>
+  </test> <!-- Other testing -->
+  <test name="Support page testing">
+    <classes>
+      <class name="tests.supportPageTests.SupportTest"/>
+    </classes>
+  </test> <!-- Support page testing -->
+  <test name="Message page testing">
+    <classes>
+      <class name="tests.messagePageTests.MessageTest"/>
+    </classes>
+  </test> <!-- Message page testing -->
+  <test name="Portfolio page testing">
+    <classes>
+      <class name="tests.mainPageTests.portfolioPageTests.PortfolioTest"/>
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_BoldTest"/>
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_ItalicTest"/>
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest"/>
+      <class name="tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest"/>
+    </classes>
+  </test> <!-- Portfolio page testing -->
+  <test name="Information page testing">
+    <classes>
+      <class name="tests.informationPageTests.InformationTest"/>
+    </classes>
+  </test> <!-- Information page testing -->
+  <test name="Education page testing">
+    <classes>
+      <class name="tests.educationPageTests.EducationTest"/>
+    </classes>
+  </test> <!-- Education page testing -->
+  <test name="Main page testing">
+    <classes>
+      <class name="tests.mainPageTests.BirthdayTest"/>
+      <class name="tests.mainPageTests.NoteTest"/>
+      <class name="tests.mainPageTests.MainPageTest"/>
+      <class name="tests.mainPageTests.NewsTest"/>
+      <class name="tests.mainPageTests.PhoneTest"/>
+      <class name="tests.mainPageTests.ImageBlockTest"/>
+    </classes>
+  </test> <!-- Main page testing -->
+  <test name="Other testing(failed)">
+    <classes>
+      <class name="tests.messagePageTests.MessageTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.messagePageTests.MessageTest -->
+      <class name="tests.PasswordRecoveryTest">
+        <methods>
+          <include name="recoveryPassword_withInvalidEmail"/>
+          <include name="openRecoveryPassword"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+          <include name="openLoginPage"/>
+        </methods>
+      </class> <!-- tests.PasswordRecoveryTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest -->
+      <class name="tests.mainPageTests.NoteTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NoteTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_ItalicTest">
+        <methods>
+          <include name="openPortfolio"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_ItalicTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.PortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.PortfolioTest -->
+      <class name="tests.educationPageTests.EducationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.educationPageTests.EducationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="x_Login"/>
+          <include name="startWebSite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.informationPageTests.InformationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.informationPageTests.InformationTest -->
+      <class name="tests.mainPageTests.BirthdayTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="closeBrowser"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="startBrowser"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.BirthdayTest -->
+      <class name="tests.supportPageTests.SupportTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.supportPageTests.SupportTest -->
+      <class name="tests.mainPageTests.MainPageTest">
+        <methods>
+          <include name="openMainPage"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.MainPageTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_BoldTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="safeEditingPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="openPortfolio"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_BoldTest -->
+      <class name="tests.mainPageTests.NewsTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NewsTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest -->
+    </classes>
+  </test> <!-- Other testing(failed) -->
+  <test name="Support page testing(failed)">
+    <classes>
+      <class name="tests.messagePageTests.MessageTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.messagePageTests.MessageTest -->
+      <class name="tests.PasswordRecoveryTest">
+        <methods>
+          <include name="openRecoveryPassword"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+          <include name="openLoginPage"/>
+        </methods>
+      </class> <!-- tests.PasswordRecoveryTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest -->
+      <class name="tests.mainPageTests.NoteTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NoteTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_ItalicTest">
+        <methods>
+          <include name="openPortfolio"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_ItalicTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.PortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.PortfolioTest -->
+      <class name="tests.educationPageTests.EducationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.educationPageTests.EducationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="x_Login"/>
+          <include name="startWebSite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.informationPageTests.InformationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.informationPageTests.InformationTest -->
+      <class name="tests.mainPageTests.BirthdayTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="closeBrowser"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="startBrowser"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.BirthdayTest -->
+      <class name="tests.supportPageTests.SupportTest">
+        <methods>
+          <include name="askQuestionWithInvalidText" invocation-numbers="1 2"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.supportPageTests.SupportTest -->
+      <class name="tests.mainPageTests.MainPageTest">
+        <methods>
+          <include name="openMainPage"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.MainPageTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_BoldTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="safeEditingPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="openPortfolio"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_BoldTest -->
+      <class name="tests.mainPageTests.NewsTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NewsTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest -->
+    </classes>
+  </test> <!-- Support page testing(failed) -->
+  <test name="Message page testing(failed)">
+    <classes>
+      <class name="tests.messagePageTests.MessageTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="addDialogueWithStudent"/>
+          <include name="sentMessageWithInvalidText" invocation-numbers="1"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.messagePageTests.MessageTest -->
+      <class name="tests.PasswordRecoveryTest">
+        <methods>
+          <include name="openRecoveryPassword"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+          <include name="openLoginPage"/>
+        </methods>
+      </class> <!-- tests.PasswordRecoveryTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest -->
+      <class name="tests.mainPageTests.NoteTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NoteTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_ItalicTest">
+        <methods>
+          <include name="openPortfolio"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_ItalicTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.PortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.PortfolioTest -->
+      <class name="tests.educationPageTests.EducationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.educationPageTests.EducationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="x_Login"/>
+          <include name="startWebSite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.informationPageTests.InformationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.informationPageTests.InformationTest -->
+      <class name="tests.mainPageTests.BirthdayTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="closeBrowser"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="startBrowser"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.BirthdayTest -->
+      <class name="tests.supportPageTests.SupportTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.supportPageTests.SupportTest -->
+      <class name="tests.mainPageTests.MainPageTest">
+        <methods>
+          <include name="openMainPage"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.MainPageTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_BoldTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="safeEditingPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="openPortfolio"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_BoldTest -->
+      <class name="tests.mainPageTests.NewsTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NewsTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest -->
+    </classes>
+  </test> <!-- Message page testing(failed) -->
+  <test name="Portfolio page testing(failed)">
+    <classes>
+      <class name="tests.messagePageTests.MessageTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.messagePageTests.MessageTest -->
+      <class name="tests.PasswordRecoveryTest">
+        <methods>
+          <include name="openRecoveryPassword"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+          <include name="openLoginPage"/>
+        </methods>
+      </class> <!-- tests.PasswordRecoveryTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest -->
+      <class name="tests.mainPageTests.NoteTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NoteTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_ItalicTest">
+        <methods>
+          <include name="openPortfolio"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_ItalicTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.PortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.PortfolioTest -->
+      <class name="tests.educationPageTests.EducationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.educationPageTests.EducationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="x_Login"/>
+          <include name="startWebSite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.informationPageTests.InformationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.informationPageTests.InformationTest -->
+      <class name="tests.mainPageTests.BirthdayTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="closeBrowser"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="startBrowser"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.BirthdayTest -->
+      <class name="tests.supportPageTests.SupportTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.supportPageTests.SupportTest -->
+      <class name="tests.mainPageTests.MainPageTest">
+        <methods>
+          <include name="openMainPage"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.MainPageTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_BoldTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="safeEditingPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="openPortfolio"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_BoldTest -->
+      <class name="tests.mainPageTests.NewsTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NewsTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest">
+        <methods>
+          <include name="addFileAndSafeWithInvalidFile" invocation-numbers="0"/>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest -->
+    </classes>
+  </test> <!-- Portfolio page testing(failed) -->
+  <test name="Education page testing(failed)">
+    <classes>
+      <class name="tests.messagePageTests.MessageTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.messagePageTests.MessageTest -->
+      <class name="tests.PasswordRecoveryTest">
+        <methods>
+          <include name="openRecoveryPassword"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+          <include name="openLoginPage"/>
+        </methods>
+      </class> <!-- tests.PasswordRecoveryTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest -->
+      <class name="tests.mainPageTests.NoteTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NoteTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_ItalicTest">
+        <methods>
+          <include name="openPortfolio"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_ItalicTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.PortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.PortfolioTest -->
+      <class name="tests.educationPageTests.EducationTest">
+        <methods>
+          <include name="openDialogueWithTeacher"/>
+          <include name="isInfoSubject"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.educationPageTests.EducationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="x_Login"/>
+          <include name="startWebSite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.informationPageTests.InformationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.informationPageTests.InformationTest -->
+      <class name="tests.mainPageTests.BirthdayTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="closeBrowser"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="startBrowser"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.BirthdayTest -->
+      <class name="tests.supportPageTests.SupportTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.supportPageTests.SupportTest -->
+      <class name="tests.mainPageTests.MainPageTest">
+        <methods>
+          <include name="openMainPage"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.MainPageTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_BoldTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="safeEditingPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="openPortfolio"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_BoldTest -->
+      <class name="tests.mainPageTests.NewsTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NewsTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest -->
+    </classes>
+  </test> <!-- Education page testing(failed) -->
+  <test name="Main page testing(failed)">
+    <classes>
+      <class name="tests.messagePageTests.MessageTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.messagePageTests.MessageTest -->
+      <class name="tests.PasswordRecoveryTest">
+        <methods>
+          <include name="openRecoveryPassword"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+          <include name="openLoginPage"/>
+        </methods>
+      </class> <!-- tests.PasswordRecoveryTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_UnderlineTest -->
+      <class name="tests.mainPageTests.NoteTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openMainPage"/>
+          <include name="deleteNote"/>
+          <include name="startWebSite"/>
+          <include name="addNote"/>
+          <include name="addNoteWithInvalidText" invocation-numbers="0 1"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NoteTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_ItalicTest">
+        <methods>
+          <include name="openPortfolio"/>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_ItalicTest -->
+      <class name="tests.mainPageTests.PhoneTest">
+        <methods>
+          <include name="changePhone"/>
+          <include name="changePhoneWithEmptyField"/>
+          <include name="changePhoneWithInvalidText"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.PhoneTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.PortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.PortfolioTest -->
+      <class name="tests.educationPageTests.EducationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.educationPageTests.EducationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="x_Login"/>
+          <include name="startWebSite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.mainPageTests.ImageBlockTest">
+        <methods>
+          <include name="_deleteImage"/>
+          <include name="addImageWithInvalidFile"/>
+          <include name="addImage"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.ImageBlockTest -->
+      <class name="tests.mainPageTests.BirthdayTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="closeBrowser"/>
+          <include name="openMainPage"/>
+          <include name="changeBirthdayWithInvalidText" invocation-numbers="0 1 2 3"/>
+          <include name="startWebSite"/>
+          <include name="startBrowser"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.BirthdayTest -->
+      <class name="tests.informationPageTests.InformationTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.informationPageTests.InformationTest -->
+      <class name="tests.supportPageTests.SupportTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.supportPageTests.SupportTest -->
+      <class name="tests.mainPageTests.MainPageTest">
+        <methods>
+          <include name="openMainPage"/>
+          <include name="authorizationOut"/>
+          <include name="changeEmailWithInvalidText" invocation-numbers="3"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.MainPageTest -->
+      <class name="tests.mainPageTests.NewsTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="commentNewsWithInvalidMessage" invocation-numbers="0 1"/>
+          <include name="openMainPage"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.NewsTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.EditText_BoldTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="safeEditingPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="openPortfolio"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.EditText_BoldTest -->
+      <class name="tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest">
+        <methods>
+          <include name="authorizationOut"/>
+          <include name="openPortfolio"/>
+          <include name="startWebSite"/>
+          <include name="x_Login"/>
+        </methods>
+      </class> <!-- tests.mainPageTests.portfolioPageTests.AddFileInPortfolioTest -->
+    </classes>
+  </test> <!-- Main page testing(failed) -->
+</suite> <!-- Failed suite [Testing IpsilonUni] -->
