@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Testing IpsilonUni">
+<suite name="Testing IpsilonUni" parallel="tests" thread-count="7">
     <test name="Other testing">
         <classes>
             <class name="tests.LoginTest"/>
