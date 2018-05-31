@@ -6,7 +6,7 @@
             <class name="tests.PasswordRecoveryTest"/>
         </classes>
     </test>
-    <!--<test name="Support page testing">
+    <test name="Support page testing">
         <classes>
             <class name="tests.supportPageTests.SupportTest"/>
         </classes>
@@ -44,5 +44,5 @@
             <class name="tests.mainPageTests.PhoneTest"/>
             <class name="tests.mainPageTests.ImageBlockTest"/>
         </classes>
-    </test>-->
+    </test>
 </suite>
