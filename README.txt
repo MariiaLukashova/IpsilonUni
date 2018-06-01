@@ -23,3 +23,5 @@ TZ=Europe/Saratov
 12. Сохранить настройки
 13. После каждой сборки отчет о результатах можно найти в файле index.html, 
 по адресу %JENKINS_HOME_PATH%\workspace\IpsilonUni\test-output\html
+
+Дополнительную информацию по работе с Jenkins можно посмотреть на сайте http://www.w3ii.com/ru/jenkins/
